@@ -1,0 +1,22 @@
+.loading-container{
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    height: 50%;
+    max-height: 500px;
+    margin: auto;
+}
+
+.loading-container label{
+    padding: 10px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.loading-container img{
+    width: 50%;
+    height: 50%;
+}

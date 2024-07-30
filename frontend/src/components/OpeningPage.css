@@ -1,0 +1,29 @@
+.opening-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .opening-container h1 {
+    font-size: 5em;
+    font-family:'Fjalla One',sans-serif;
+    color:#171717;
+    letter-spacing: 3px;
+    color : pink;
+    text-shadow: 
+    1px 1px 0 rgba(238,238,238,1),
+    2px 2px 0 rgba(238,238,238,0.9),
+    3px 3px 0 rgba(23,23,23,0.8),
+    4px 4px 0 rgba(23,23,23,0.7),
+    5px 5px 0 rgba(23,23,23,0.6),
+    6px 6px 0 rgba(23,23,23,0.5);
+  }
+  
+  .opening-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .opening-container li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,30 @@
+.message {
+    position: fixed;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    word-wrap: break-word; /* Ensures long words break instead of overflow */
+    max-width: 100%; /* Ensures the message doesn't exceed its container's width */
+
+    z-index: 10;
+    right: 0;
+}
+
+.message.error {
+    background-color: #d39696;
+    border: 1px solid #cc5f5f;
+}
+.message.succses {
+    background-color: #74fc86;
+    border: 1px solid #a7e4d2;
+}
+
+.message.visible {
+    opacity: 1;
+}
+
+.message.hidden {
+    opacity: 0;
+}

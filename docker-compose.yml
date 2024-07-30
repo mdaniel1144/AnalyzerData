@@ -1,0 +1,49 @@
+version: "3.0"
+services:
+  mainservice:
+    build: ./backend/mainService/
+    container_name: mainService
+    volumes:
+      - ./backend/mainService:/app
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+
+  sqlservice:
+    build: ./backend/sqlService/
+    container_name: sqlService
+    volumes:
+      - ./backend/sqlService:/app
+    ports:
+      - "8888:8888"
+    networks:
+      - app-network
+
+
+  graphservice:
+    build: ./backend/graphService/
+    container_name: graphService
+    volumes:
+      - ./backend/graphService:/app
+    ports:
+      - "9000:9000"
+    networks:
+      - app-network
+
+
+  react:
+    build: ./frontend/
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    container_name: react
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - mainservice
+
+networks:
+  app-network:
+    driver: bridge

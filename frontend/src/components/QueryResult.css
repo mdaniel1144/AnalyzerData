@@ -1,0 +1,59 @@
+.queryResult-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.queryResult-container h1{
+    
+    font-size: 3em;
+    font-family:'Fjalla One',sans-serif;
+    letter-spacing: 3px;
+    color : pink;
+    text-shadow: 
+    1px 1px 0 rgba(238,238,238,1),
+    2px 2px 0 rgba(238,238,238,0.9),
+    3px 3px 0 rgba(23,23,23,0.8),
+    4px 4px 0 rgba(23,23,23,0.7),
+    5px 5px 0 rgba(23,23,23,0.6),
+    6px 6px 0 rgba(23,23,23,0.5);
+}
+
+.queryResult-table-preview{
+    margin: auto;
+    padding: 10px;
+}
+
+.queryResult-table-container{
+    width: min-content;
+    max-width: 800px;
+    height: 90%;
+    overflow: auto;
+    margin: auto;
+    max-height: 500px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.queryResult-table-preview td{
+    text-align: center;
+    font-size: medium;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.queryResult-table-preview thead{
+    background-color: rgb(161, 245, 217);
+    font-size: larger;
+}
+.queryResult-table-preview th{
+    padding: 10px 20px 10px 20px;
+}
+
+.queryResult-table-preview tr.odd{
+    background-color: rgb(168, 237, 214);
+}
+.queryResult-table-preview tr.odd:hover{
+    background-color: rgba(170, 238, 215, 0.545);
+}
+
